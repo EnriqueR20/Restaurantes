@@ -9,7 +9,7 @@ const platoRouter: Router = Router();
 
 
 /*Metodos POST */
-platoRouter.post("/",verifyToken, CrearPlato);
+platoRouter.post("/", CrearPlato);
 
 
 /*Metodos GET */
