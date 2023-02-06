@@ -7,7 +7,7 @@ import { CrearComentario, BuscarComentario,EliminarComentario,ActualizaComentari
 const comentarioRouter: Router = Router();
 
 /*Metodos POST */
-comentarioRouter.post("/",verifyToken, CrearComentario);
+comentarioRouter.post("/", CrearComentario);
 
 /*Metodos GET */
 comentarioRouter.get("/:id", BuscarComentario);
