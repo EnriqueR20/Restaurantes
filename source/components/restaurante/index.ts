@@ -9,7 +9,7 @@ const restauranteRouter: Router = Router();
 
 
 /*Metodos POST */
-restauranteRouter.post("/",verifyToken, CrearRestaurante);
+restauranteRouter.post("/", CrearRestaurante);
 
 /*Metodos GET */
 restauranteRouter.get("/:id", verifyToken, BuscarRestaurante);
