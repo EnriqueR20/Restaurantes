@@ -41,7 +41,7 @@ export const AllRestaurante = async (_req: Request, res: Response): Promise<void
       select: {
         nombre:true,departamento:true,telefono:true,referencia:true,distrito:true
         ,provincia:true,usuarioId:true,
-        tipo:true,apertura:true,cierre:true,fech_creacion:true,calificacion:true,descripcion:true
+        tipo:true,apertura:true,cierre:true,fech_creacion:true,calificacion:true,descripcion:true,restaurante_id :true
       },
     });
     res.json(allrestau);
