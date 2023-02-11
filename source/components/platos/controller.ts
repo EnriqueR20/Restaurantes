@@ -85,7 +85,7 @@ export const AllPlato = async (_req: Request, res: Response): Promise<void> => {
     const AllPlato = await prisma.plato.findMany({
 
       select: {
-        nombre_plato:true, precio:true, imagen:true, disponibilidad:true,descripcion:true,
+        nombre_plato:true, precio:true, imagen:true, disponibilidad:true,descripcion:true,restaurante_id:true,
       },
     });
     res.json(AllPlato);
